@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l ncpus=4:ngpus=1
+#PBS -l select=1:ncpus=4:ngpus=1
 #PBS -l walltime=00:10:00
 
 # New cluster system
@@ -23,8 +23,8 @@ cd $work
 pmemd.cuda -O \
 	-i $prefix/md.in \
 	-p $prefix/RAMP1.prmtop \
-	-c $prefix/RAMP1_eq7.rst7 \
-	-ref $prefix/RAMP1_eq7.rst7 \
+	-c $prefix/RAMP1_equil.rst7 \
+	-ref $prefix/RAMP1_equil.rst7 \
 	-o RAMP1_md.mdout \
 	-r RAMP1_md.rst7 \
 	-x RAMP1_md.crd.nc \
