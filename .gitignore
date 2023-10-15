@@ -1,2 +1,5 @@
-output/
+output/*
 log/
+
+!output/10257.pbs-server/
+!output/5281050.ccpbs1/
