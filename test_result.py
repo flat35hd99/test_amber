@@ -1,8 +1,8 @@
 import netCDF4 as nc
 import numpy as np
 
-former_id = "10204.pbs-server"
-latter_id = "5278351.ccpbs1"
+former_id = "10257.pbs-server"
+latter_id = "5281050.ccpbs1"
 
 nc_former = nc.Dataset(f"output/{former_id}/RAMP1_md.force.nc", "r")
 nc_latter = nc.Dataset(f"output/{latter_id}/RAMP1_md.force.nc", "r")
